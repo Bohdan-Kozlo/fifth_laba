@@ -1,6 +1,5 @@
 package ua.lviv.iot.algo.part1.lab5;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,14 +17,5 @@ public class LastLetterUpperCaseTransformer {
 
         matcher.appendTail(builder);
         return builder.toString();
-    }
-
-    public static void main(String[] var0) {
-        LastLetterUpperCaseTransformer transformer = new LastLetterUpperCaseTransformer();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input text: ");
-        String inputText = scanner.nextLine();
-        String result = transformer.transformText(inputText);
-        System.out.println(result);
     }
 }
